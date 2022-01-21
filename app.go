@@ -37,6 +37,7 @@ type App struct {
 
 // New create an application lifecycle manager.
 func New(opts ...Option) *App {
+	println("测试....")
 	o := options{
 		ctx:              context.Background(),
 		logger:           log.NewHelper(log.GetLogger()),
